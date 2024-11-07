@@ -1,0 +1,18 @@
+def analyser_phrase():
+    phrase = input("Entrez une phrase se terminant par un point : ")
+if not phrase.endswith('.'):
+        print("La phrase doit se terminer par un point.")
+        return
+     //Nb de phrase
+        longueur_phrase = len(phrase)
+         //Nb de mots
+        mots = phrase[:-1].split() 
+    nombre_de_mots = len(mots)
+    //Nb de voyelles
+    voyelles = "aeiouyAEIOUY"
+    nombre_de_voyelles = sum(1 for char in phrase if char in voyelles)
+    print(f"Longueur de la phrase : {longueur_phrase} caractères")
+    print(f"Nombre de mots dans la phrase : {nombre_de_mots}")
+    print(f"Nombre de voyelles dans la phrase : {nombre_de_voyelles}")
+
+    analyser_phrase()
